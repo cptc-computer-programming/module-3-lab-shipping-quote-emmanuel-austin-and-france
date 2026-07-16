@@ -1,7 +1,7 @@
 public class ShippingQuote {
     public static void main(String[] args) {
        
-        // Package definition 
+        // Package
         double weight = 12.5;   // pounds
         double length = 20.0;   // inches
         double width  = 15.0;   // inches
@@ -11,6 +11,9 @@ public class ShippingQuote {
         double volume = computeVolume(length, width, height);
         double sizeFactor = computeSizeFactor(volume);
         double finalCost = computeFinalCost(weight, sizeFactor);
+
+        // Output results
+        printQuote(volume, sizeFactor, finalCost);
     }
 
 
@@ -36,5 +39,13 @@ public class ShippingQuote {
         return baseCost
                 + (weight * weightRate) 
                 + (sizeFactor * sizeRate);
+    }
+
+        // Print shipping quote
+    public static void printQuote(double volume, double sizeFactor, double finalCost) {
+        System.out.println("----- SHIPPING QUOTE -----");
+        System.out.println("Volume: " + volume + " cubic inches");
+        System.out.println("Size Factor (cube root): " + sizeFactor);
+        System.out.println("Estimated Cost: $" + Math.round(finalCost * 100.0) / 100.0);
     }
 }
