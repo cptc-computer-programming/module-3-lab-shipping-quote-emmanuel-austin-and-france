@@ -9,9 +9,7 @@ public class ShippingQuote {
 
         // Compute required values
         double volume = computeVolume(length, width, height);
-
-
-
+    }
 
 
 
@@ -20,6 +18,6 @@ public class ShippingQuote {
         // Calculates volume in cubic inches
     public static double computeVolume(double length, double width, double height) {
         return length * width * height;
-        
+
     }
 }
