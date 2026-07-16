@@ -7,11 +7,18 @@ Write your cost formula (math or pseudocode). It must include:
 - at least one size-based factor
 
 ```java 
-// formula could go here
+volume = length * width * height
+sizeFactor = Math.cbrt(volume)
+
+finalCost = 5.00
+          + (weight * 0.75)
+          + (sizeFactor * 0.40)
 ```
 
 
 Brief justification (2–4 sentences):
+
+The formula uses weight so heavier packages cost more to ship. It also uses a size factor so large or bulky packages cost more because they take up extra space. I chose the cube root of the volume because it increases with size but doesn’t make the price jump too high for big boxes.
 
 ---
 
@@ -26,31 +33,31 @@ For each method, keep it short. Include only:
 Use at least 5 methods.
 
 **Method 1**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Computes the volume of the package in cubic inches
+- inputs: length, width, height
+- output: volume
+- return type: double
 
 **Method 2**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Computes the cube-root size
+- inputs: volume
+- output: sizeFactor
+- return type: double
 
 **Method 3**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Calculates the final shipping cost using base cost, weight, and size factor.
+- inputs: weight, sizeFactor
+- output: finalCost
+- return type: double
 
 **Method 4**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Prints the shipping quote values in a formatted layout
+- inputs: volume, sizeFactor, finalCost
+- output: none
+- return type: void
 
 **Method 5**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Rounds a cost value to two decimal places for display
+- inputs: cost
+- output: roundedCost
+- return type: double
