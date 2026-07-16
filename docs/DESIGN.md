@@ -38,19 +38,19 @@ Use at least 5 methods.
 - return type: double
 
 **Method 3**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Calculates the final shipping cost using base cost, weight, and size factor.
+- inputs: weight, sizeFactor
+- output: finalCost
+- return type: double
 
 **Method 4**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Prints the shipping quote values in a formatted layout
+- inputs: volume, sizeFactor, finalCost
+- output: none
+- return type: void
 
 **Method 5**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Rounds a cost value to two decimal places for display
+- inputs: cost
+- output: roundedCost
+- return type: double
