@@ -32,10 +32,10 @@ Use at least 5 methods.
 - return type: double
 
 **Method 2**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Computes the cube-root size
+- inputs: volume
+- output: sizeFactor
+- return type: double
 
 **Method 3**:
 - description:
