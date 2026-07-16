@@ -6,5 +6,4 @@ public class ShippingQuote {
         double length = 20.0;   // inches
         double width  = 15.0;   // inches
         double height = 10.0;   // inches
-    }
 }
