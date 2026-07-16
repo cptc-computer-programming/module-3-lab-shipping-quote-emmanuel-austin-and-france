@@ -26,10 +26,10 @@ For each method, keep it short. Include only:
 Use at least 5 methods.
 
 **Method 1**:
-- description:
-- inputs:
-- output:
-- return type:
+- description: Computes the volume of the package in cubic inches
+- inputs: length, width, height
+- output: volume
+- return type: double
 
 **Method 2**:
 - description:
